@@ -1,7 +1,11 @@
 package app;
 
+import service.QuestionService;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        QuestionService questionService = new QuestionService();
+        questionService.printQuestions();
+        questionService.printScore();
     }
 }
